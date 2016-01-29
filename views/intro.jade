@@ -1,0 +1,101 @@
+extends ./layoutintro.jade
+
+block content
+    .main-wrapper
+        header
+            nav#nav
+                .logo: a(href='#') Jimmy
+                .menu#menu-toggle: a(href='#'): span.fa.fa-bars.fa-lg
+            #menu
+                ul
+                    li.menu-item: a(href='#') Blog
+                    li.menu-item: a(href='#') Projects
+                    li.menu-item: a(href='/resume') CV
+            #banner
+                .inner
+                    h2 俊民君
+                    p 喜欢折腾，热爱学习
+                    button: a(href='/resume') 了解我
+                    .more 更多#[span.fa.fa-arrow-down]
+
+        .content
+            section.yellow-section
+                .wrapper
+                    div
+                        h2 个性特点
+                        .hr
+                        p 喜爱撸代码，喜爱看书，
+                        p 喜爱吃吃喝喝，喜爱和随和的人扯淡
+
+                    .icon-group
+                        span.icon.fa.fa-book
+                        span.icon.fa.fa-coffee
+                        span.icon.fa.fa-wechat
+
+            section.pink-section
+                .article-preview.clearfix
+                    .img-section
+                        img(src='images/study.jpeg' alt='')
+                    .text-section
+                        h2 学习
+                        p 让我变得更加的强大，
+                        p 让我有能力去做我想做的事情，
+                        p 让我的生活更加的充实～
+                .article-preview.clearfix
+                    .text-section
+                        h2 吃喝
+                        p 吃吃喝喝，
+                        p 让我心情愉悦，
+                        p 让我充满动力～
+                    .img-section
+                        img(src='images/eat.jpg' alt='')
+                .article-preview.clearfix
+                    .text-section
+                        h2 扯淡
+                        p 让我提高沟通能力，
+                        p 说不定还可以遇到生命中的她，
+                        p 想想都有点小激动呢～
+                    .img-section
+                        img(src='images/talk.jpg' alt='')
+            section.purple-section
+                .wrapper
+                    .heading-wrapper
+                        h2 特长
+                        .hr
+                        p 潜力仍在不断的挖掘中
+
+                    .card-group.clearfix
+                        .card
+                            h3 爱前端
+                            p 时刻通过网络资源关注前端发展趋势，
+                            p 稳打稳扎的同时，
+                            p 不忘记折腾新技术～
+                        .card
+                            h3 geek 精神
+                            p 喜欢专研，
+                            p 善于独立解决问题，
+                            p 遇到问题常求助于Google～
+                        .card
+                            h3 爱学习
+                            p 喜欢刷书，
+                            p 学习能力比较强，
+                            p 成绩优异，取得过学习优秀奖～
+                        .card
+                            h3 爱运动
+                            p 喜欢跑步，
+                            p 打篮球，
+                            p 健康才是最重要的～
+            section.white-section
+                .wrapper
+                    button: a(href='/lm') 喜欢我，就告诉我吧～
+
+        footer
+            .share-group
+                ul
+                    li
+                        a(href='#'): span.fa.fa-fort-awesome
+                    li
+                        a(href='/resume'): span.fa.fa-user
+
+            .copy
+                &copy; JIMMY ALL RIGHTS RESERVED
