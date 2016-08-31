@@ -36,7 +36,6 @@ gulp.task('jade', function() {
         }))
         .pipe(gulp.dest(htmlDest))
         .pipe(livereload())
-        .pipe(notify('Jade: done -> <%= file.relative %>!'));
 
     return stream;
 });
@@ -44,7 +43,7 @@ gulp.task('jade', function() {
 
 gulp.task('css', function() {
     var cssDest = './public/stylesheets/dest';
-    var stream = gulp.src(paths.css)
+    var stream = gulp.src('./public/stylesheets/src/test.less')
         .pipe(plumber({
             errorHandler: notify.onError('Message:\n\t<%= error.message %>\nDetails:\n\tlineNumber: <%= error.lineNumber %>')
         }))
@@ -56,7 +55,6 @@ gulp.task('css', function() {
         }))
         .pipe(gulp.dest(cssDest))
         .pipe(livereload())
-        .pipe(notify('CSS: done -> <%= file.relative %>!'));
 
     return stream;
 });
@@ -88,7 +86,6 @@ gulp.task('js', function() {
         }))
         .pipe(gulp.dest(jsDest))
         .pipe(livereload())
-        .pipe(notify('Js: done -> <%= file.relative %>!'));
 
     return stream;
 });

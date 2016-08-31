@@ -23,7 +23,7 @@ router.route('/resume')
 
 router.route('/test')
 .get(function(req, res, next) {
-    res.render('test.html');
+    res.render('test');
 });
 
 

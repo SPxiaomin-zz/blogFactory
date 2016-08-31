@@ -1,0 +1,269 @@
+/*
+* reset
+*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+select,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+img,
+fieldset {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+abbr {
+  border: 0;
+  font-variant: normal;
+}
+li {
+  list-style: none;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+q:before,
+q:after {
+  content: '';
+}
+/*
+* common
+*/
+.clearfix::after {
+  display: block;
+  height: 0;
+  content: " ";
+  visibility: hidden;
+  clear: both;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+.main-wrapper {
+  position: relative;
+  height: 100%;
+  background: url(/image/halation.png) no-repeat center center, url(/image/white.png) no-repeat center center, url(/image/light.png) no-repeat center center;
+  background-size: cover;
+}
+.main-wrapper::before {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #f25930;
+  content: " ";
+}
+.content {
+  height: 68%;
+}
+.content-back {
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+.content-back-left {
+  display: inline-block;
+  float: left;
+  position: relative;
+  width: 45%;
+  height: 100%;
+}
+.content-back-left img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 403px;
+  max-height: 425px;
+}
+.content-back-right {
+  display: inline-block;
+  float: left;
+  position: relative;
+  width: 55%;
+  height: 100%;
+  color: #f25930;
+  text-align: center;
+}
+.content-back-right .content-back-right-text {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 160px;
+}
+.content-back-right h1 {
+  margin-bottom: 5px;
+  font-size: 48px;
+  font-weight: 800;
+}
+.content-back-right h2 {
+  font-size: 18px;
+}
+.content-back-right h2::after {
+  display: block;
+  width: 70px;
+  height: 4px;
+  margin: 40px auto 0 auto;
+  background: #f25930;
+  content: " ";
+}
+.content-boxes {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  width: 94%;
+  max-width: 1000px;
+  margin-top: -72px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box {
+  display: inline-block;
+  float: left;
+  width: 300px;
+  height: 150px;
+  padding: 26px 38px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.content-boxes-text {
+  display: inline-block;
+  margin-left: 25px;
+}
+.content-boxes-text h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.content-boxes-text p {
+  font-size: 14px;
+}
+.content-boxes-one {
+  background: #f25930 url(/image/fup.png) no-repeat center center;
+}
+.content-boxes-one::before {
+  display: inline-block;
+  width: 71px;
+  height: 72px;
+  background: url(/image/appointment.png) no-repeat center center;
+  content: " ";
+}
+.content-boxes-one::after {
+  display: block;
+  width: 300px;
+  height: 49px;
+  margin-top: 24px;
+  margin-left: -38px;
+  background: url(/image/abottom.png) no-repeat center center;
+  content: " ";
+}
+.content-boxes-two {
+  margin-left: 3%;
+  background: #33ACF2 url(/image/fup.png) no-repeat center center;
+}
+.content-boxes-two::before {
+  display: inline-block;
+  width: 71px;
+  height: 72px;
+  background: url(/image/print.png) no-repeat center center;
+  content: " ";
+}
+.content-boxes-two::after {
+  display: block;
+  width: 300px;
+  height: 49px;
+  margin-top: 24px;
+  margin-left: -38px;
+  background: url(/image/pbottom.png) no-repeat center center;
+  content: " ";
+}
+.content-boxes-three {
+  margin-left: 3%;
+  background: #19B076 url(/image/fup.png) no-repeat center center;
+}
+.content-boxes-three::before {
+  display: inline-block;
+  width: 71px;
+  height: 72px;
+  background: url(/image/fill.png) no-repeat center center;
+  content: " ";
+}
+.content-boxes-three::after {
+  display: block;
+  width: 300px;
+  height: 49px;
+  margin-top: 24px;
+  margin-left: -38px;
+  background: url(/image/fbottom.png) no-repeat center center;
+  content: " ";
+}
+.footer {
+  position: relative;
+  height: 32%;
+  background: #f5dac3;
+}
+.footer::before {
+  display: block;
+  position: absolute;
+  bottom: 27px;
+  height: 1px;
+  width: 90%;
+  margin-left: 5%;
+  background: #B59375;
+  content: " ";
+}
+.footer p {
+  position: absolute;
+  bottom: 0;
+  padding: 0 5px;
+  margin: 0 auto 18px auto;
+  margin-left: 38%;
+  color: #B59375;
+  background: #f5dac3;
+}
